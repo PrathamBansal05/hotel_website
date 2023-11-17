@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            /* overflow-y: auto; */
+            box-sizing: border-box;
+        }
+        .help{
+            background-image: linear-gradient(to bottom right,pink,yellow,aqua,pink);
+        }
+        .wrapper{
+            /* border: 2px solid black; */
+            /* height: 100vh;
+            width: 100vw; */
+            /* display: flex; */
+            /* justify-content: center; */
+            margin: auto;
+            /* align-items: center; */
+            /* position: relative; */
+            background-color: rgb(242, 242, 245);
+            height: fit-content;
+            width: fit-content;
+            font-size: xx-large;
+            text-align: center;
+            height: 1400px;
+            width: 1000px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(3,auto);
+            height: 1400px;
+            width: 1000px;
+            /* border: 2px solid red; */
+            padding-top: 150px;
+            gap: 14px;
+            position: relative;
+            bottom: 20px;
+            padding-bottom: 150px;
+        }
+        .image-1{
+            background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/98/c7/68/library--v11450127.jpg?w=700&h=-1&s=1');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-2{
+            background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/17/ff/8e/5f/gallery-67.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-3{
+            background-image: url('https://s3.amazonaws.com/static-webstudio-accorhotels-usa-1.wp-ha.fastbooking.com/wp-content/uploads/sites/2/2016/11/07142720/Santa-Teresal-gallery-Pool-1-1200x690.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-4{
+            background-image: url('https://www.meininger-hotels.com/fileadmin/_processed_/b/c/csm_7557-meininger-hotel-berlin-east-side-gallery_168b8b6b24.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-5{
+            background-image: url('https://www.hotelierindia.com/public/styles/full_img_sml/public/images/2019/08/08/DSCN6715.jpg?QItMeur7');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-6{
+            background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/05/21/b7/43/swissotel-makkah.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-7{
+            background-image: url('https://www.theparkhotels.com/images/site-specific/corporate-site/gallery/gallery-banner.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-8{
+            background-image: url('https://www.hospitalitynet.org/picture/xxl_153098435.jpg?t=1552639660');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-9{
+            background-image: url('https://media.timeout.com/images/103626392/image.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .bg:hover{
+            transform: scale(1.08);
+            filter:initial;
+            box-shadow: -2px -2px 5px black,2px 2px 5px black;
+        }
+        .bg{
+            filter: grayscale(100%);
+            border-radius: 10px;
+            position: relative;
+            transition: 0.5s;
+        }
+        .ab{
+            position: absolute;
+            /* border: 1px solid red; */
+            top: 20px;
+        }
+        section{
+            background-color: peachpuff;
+            height: 300px;
+        }
+        .dd{
+            position: absolute;
+            bottom: 0px;
+            
+            /* border: 5px solid rebeccapurple; */
+            display: block;
+            width: 220px;
+        }
+        .dd{
+            opacity: 0;
+        }
+        .bg:hover .dd{
+            opacity: 1;
+            scale: 1.03;
+            background-image: linear-gradient(to top,rgba(170, 31, 31, 0.95),rgba(226, 100, 100, 0.95));
+        }
+        .ab{
+            font-family:'Times New Roman', Times, serif;
+            text-shadow: 1px 1px 2px red,-1px -1px 2px red;
+            text-align: center;
+            display: block;
+            /* border: 2px solid red; */
+            position: relative;
+            
+        }
+        footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    footer p {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .hh2{
+        text-align: center;
+    }  
+  
+    </style>
+</head>
+<body>
+    <div class="help">
+        <div class="wrapper">
+            <div class="ab"><h1>Image Gallery</h1></div>
+            <div class="main">
+                <div class="image-1 bg"></div>
+                <div class="image-2 bg"></div>
+                <div class="image-3 bg"></div>
+                <div class="image-4 bg"></div>
+                <div class="image-5 bg"></div>
+                <div class="image-6 bg"></div>
+                <div class="image-7 bg"></div>
+                <div class="image-8 bg"></div>
+                <div class="image-9 bg"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+		<!-- Footer information about your hotel -->
+		<p>&copy; Hotel Website 2023. All rights reserved.</p>
+	</footer>
+    
+</body>
+</html>

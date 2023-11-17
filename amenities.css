@@ -1,0 +1,100 @@
+/* Style for the amenities section */
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+/* Style for each amenity item */
+.amenity-item {
+  position: relative;
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style for the amenity image */
+.amenity-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style for the amenity title */
+.amenity-item h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style for the amenity description */
+.amenity-item p {
+  margin: 0;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* Hover effect on the amenity item */
+.amenity-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect on the amenity image */
+.amenity-item:hover img {
+  opacity: 1;
+}
+
+/* Hover effect on the amenity title */
+.amenity-item:hover h3 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Animation for the footer */
+footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+
+  /* animation: footerAnimation 5s ease-in-out infinite; */
+}
+
+@keyframes footerAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h2{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
